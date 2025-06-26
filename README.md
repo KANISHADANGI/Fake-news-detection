@@ -60,7 +60,6 @@ For a complete description of all features, please refer to `TruthSeeker2023/rea
     ```bash
     pip install -r requirements.txt
     ```
-
 ## Usage
 
 The entire pipeline can be executed by running the main script from the `src` directory.
