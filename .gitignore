@@ -131,10 +131,7 @@ cython_debug/
 
 ### Project-specific ignores ###
 
-# Ignore dataset files
-TruthSeeker2023/*.csv
-TruthSeeker2023/*.xlsx
-!TruthSeeker2023/readme.txt
+
 
 # Ignore saved model
 *.pkl
