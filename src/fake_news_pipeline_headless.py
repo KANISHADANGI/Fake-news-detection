@@ -20,7 +20,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
-from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import (accuracy_score, precision_score, recall_score, 
                             f1_score, classification_report, confusion_matrix,
                             roc_auc_score, roc_curve, precision_recall_curve)
@@ -367,7 +366,6 @@ class FakeNewsDetector:
         base_models = {
             'Logistic Regression': LogisticRegression(random_state=42, max_iter=1000),
             'Random Forest': RandomForestClassifier(random_state=42, n_estimators=100),
-            'Naive Bayes': MultinomialNB()
         }
 
         models = {name: CalibratedClassifierCV(base_model, method='isotonic', cv=3) 
